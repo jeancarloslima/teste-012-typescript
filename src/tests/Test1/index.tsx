@@ -1,10 +1,38 @@
-import LoginForm from "./components/LoginForm"
-import ToDoList from "./components/ToDoList"
-import UserCard from "./components/UserCard"
-import UserProfile from "./components/UserProfile"
+let nome: string = "Sebalter";
+let horasProjeto: number = 400;
+let projetoConcluido: boolean = false;
 
-function App() {
-  type Paciente = {
+nome = 40; // Erro
+console.log(nome);
+
+
+
+const tecnologiasFront: string[] = ["React", "Zustand", "Tailwind CSS"];
+const notas: number[] = [1, 4, 6];
+tecnologiasFront.push(100); // Erro
+
+
+
+let dadoQualquer: any = "Uma string";
+
+dadoQualquer = 10;
+dadoQualquer = true;
+
+dadoQualquer.map();
+
+
+
+let dadoDesconhecido: unknown = "Um texto";
+
+dadoDesconhecido.toUpperCase(); // Erro
+
+if (typeof dadoDesconhecido === "string") {
+    dadoDesconhecido.toUpperCase();
+}
+
+
+
+type Paciente = {
     id: number;
     nome: string;
     cpf: string;
@@ -47,17 +75,3 @@ const consulta: Agendamento = {
 }
 
 console.log(consulta);
-
-  return (
-    <div className="w-screen min-h-screen flex items-center justify-center bg-gray-500">
-      {/* <UserCard name="Jean Lima" age={21} role="admin">
-        <h4>Lista de coisas favoritas</h4>
-      </UserCard> */}
-      {/* <UserProfile /> */}
-      {/* <LoginForm /> */}
-      {/* <ToDoList /> */}
-    </div>
-  )
-}
-
-export default App
