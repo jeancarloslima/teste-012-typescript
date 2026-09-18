@@ -1,18 +1,13 @@
-import LoginForm from "./components/LoginForm"
-import ToDoList from "./components/ToDoList"
-import UserCard from "./components/UserCard"
-import UserProfile from "./components/UserProfile"
+import Chat from "./secretProject/components/Chat"
+import Controls from "./secretProject/components/Controls"
+import Sheet from "./secretProject/components/Sheet"
 
 function App() {
-
   return (
-    <div className="w-screen min-h-screen flex items-center justify-center bg-gray-500">
-      {/* <UserCard name="Jean Lima" age={21} role="admin">
-        <h4>Lista de coisas favoritas</h4>
-      </UserCard> */}
-      {/* <UserProfile /> */}
-      {/* <LoginForm /> */}
-      {/* <ToDoList /> */}
+    <div className="w-screen min-h-screen flex items-center justify-center bg-gray-300 text-black">
+      <Chat />
+      <Controls />
+      <Sheet name="Sebalter"/>
     </div>
   )
 }
